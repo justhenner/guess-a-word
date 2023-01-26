@@ -15,6 +15,17 @@ class Letter {
             return '_'
         }
     }
+    guess(guess){
+        if (guess.toLowerCase() === this.letter.toLowerCase()){
+           this.visible = true;
+            return true;
+        } else {
+            return false;
+        }
+    }
+    getSolution(){
+        return this.letter;
+    }
 }
 
 module.exports = Letter;
